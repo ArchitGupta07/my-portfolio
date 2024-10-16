@@ -1,23 +1,51 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "@/components/header/header.css";
-import Link from "next/link";
+
 import { usePathname } from "next/navigation";
-import Image from "next/image";
+
 // import { getSession, logout } from "@/utils/actions";
 // import { SessionData } from "@/utils/lib";
 
-// type NavbarProps = {
-//   session: SessionData;
-// };
+interface HeaderProps {
+  scrollToSection: (ref: React.RefObject<HTMLElement>) => void;
+  heroRef: React.RefObject<HTMLElement>;
+  contactRef: React.RefObject<HTMLElement>;
+  aboutRef: React.RefObject<HTMLElement>;
+}
 
-const Header = () => {
+const Header: React.FC<HeaderProps> = ({
+  scrollToSection,
+  heroRef,
+  contactRef,
+  aboutRef,
+}) => {
   const path = usePathname();
   // console.log(path);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  // Add scroll event listener to change the background
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        // Change 50 to your desired scroll value
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <header className="container header">
+    <header className={`container header ${isScrolled ? "scrolled" : ""}`}>
       <div className="logo-part">
         {/* <Image src="/logo.png" width={40} height={40} alt="logo" /> */}
         <h2>&lt; Archit Gupta /&gt;</h2>
@@ -31,7 +59,7 @@ const Header = () => {
                 : "main-header-list"
             }
           >
-            <Link href="/dashboard">Home</Link>
+            <button onClick={() => scrollToSection(heroRef)}>Home</button>
           </li>
 
           <li
@@ -41,7 +69,7 @@ const Header = () => {
                 : "main-header-list"
             }
           >
-            <Link href="/dashboard/exams">About</Link>
+            <button onClick={() => scrollToSection(aboutRef)}>About</button>
           </li>
           <li
             className={
@@ -50,7 +78,7 @@ const Header = () => {
                 : "main-header-list"
             }
           >
-            <Link href="/dashboard/blogs">Projects</Link>
+            <button>Projects</button>
           </li>
           <li
             className={
@@ -59,17 +87,17 @@ const Header = () => {
                 : "main-header-list"
             }
           >
-            <Link href="/dashboard/code">Contact</Link>
+            <button onClick={() => scrollToSection(contactRef)}>Contact</button>
           </li>
-          <li
+          {/* <li
             className={
               path === "/dashboard/about"
                 ? "active main-header-list"
                 : "main-header-list"
             }
-          >
-            {/* <Link href="/dashboard/about"></Link> */}
-          </li>
+          > */}
+          {/* <Link href="/dashboard/about"></Link> */}
+          {/* </li> */}
         </ul>
       </nav>
     </header>

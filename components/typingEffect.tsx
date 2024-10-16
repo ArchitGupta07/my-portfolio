@@ -18,7 +18,7 @@ const TypingEffect: React.FC<TypingEffectProps> = ({
 
   useEffect(() => {
     let typingTimeout;
-    let currentText = texts[currentIndex];
+    const currentText = texts[currentIndex];
 
     if (!isDeleting) {
       // Typing effect

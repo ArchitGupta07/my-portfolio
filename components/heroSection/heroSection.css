@@ -70,22 +70,23 @@
 .hero-buttons button {
   padding: 1.4rem 4rem;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 600;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background 0.3s;
+  color: #1d2251;
 }
 
 /* Button styles */
 .light-theme .hero-buttons button {
   background-color: #f0f0f0;
-  color: #333;
+  /* color: #333; */
 }
 
 .dark-theme .hero-buttons button {
   background-color: #333;
-  color: #f0f0f0;
+  /* color: #f0f0f0; */
 }
 
 .hero-buttons button:hover {
@@ -101,5 +102,5 @@
   height: 6rem; /* Set a fixed height for the container */
   display: flex;
   align-items: center;
-  color: #b388eb;
+  color: #1e58c6;
 }

@@ -33,10 +33,10 @@ const ContactForm: React.FC = () => {
 
   // Basic form validation
   const validateForm = () => {
-    let errors = { name: "", email: "", message: "" };
-    if (!formData.name) errors.name = "Name is required";
-    if (!formData.email) errors.email = "Email is required";
-    if (!formData.message) errors.message = "Message is required";
+    const errors = { name: "", email: "", message: "" };
+    // if (!formData.name) errors.name = "Name is required";
+    // if (!formData.email) errors.email = "Email is required";
+    // if (!formData.message) errors.message = "Message is required";
     return errors;
   };
 
@@ -55,12 +55,18 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="contact-form">
+    <section className="contact-form-section">
       <h2>Contact Me</h2>
       {isSubmitted ? (
         <div className="thank-you-message">Thank you for your message!</div>
       ) : (
-        <form onSubmit={handleSubmit}>
+        <form className="contact-form" onSubmit={handleSubmit}>
+          <h1>Connect With Me</h1>
+          <p>
+            Feel free to reach out if you&apos;d like to learn more about me and
+            my work or just want to say hi. I&apos;d love to connect and hear
+            from you!
+          </p>
           <div className="form-group">
             <label htmlFor="name">Name:</label>
             <input
@@ -70,6 +76,7 @@ const ContactForm: React.FC = () => {
               value={formData.name}
               onChange={handleChange}
               className={formErrors.name ? "error" : ""}
+              placeholder="Enter your Name"
             />
             {formErrors.name && (
               <span className="error-text">{formErrors.name}</span>
@@ -85,6 +92,7 @@ const ContactForm: React.FC = () => {
               value={formData.email}
               onChange={handleChange}
               className={formErrors.email ? "error" : ""}
+              placeholder="Enter Your Email Address"
             />
             {formErrors.email && (
               <span className="error-text">{formErrors.email}</span>
@@ -99,18 +107,22 @@ const ContactForm: React.FC = () => {
               value={formData.message}
               onChange={handleChange}
               className={formErrors.message ? "error" : ""}
+              placeholder="Enter Your Message"
+              rows={5}
             />
             {formErrors.message && (
               <span className="error-text">{formErrors.message}</span>
             )}
           </div>
 
-          <button type="submit" className="submit-btn">
-            Send Message
-          </button>
+          <div className="btn-holder">
+            <button type="submit" className="contact-submit-btn">
+              Send Message
+            </button>
+          </div>
         </form>
       )}
-    </div>
+    </section>
   );
 };
 

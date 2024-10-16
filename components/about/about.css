@@ -1,0 +1,26 @@
+.about-section {
+  background: var(--bgDark);
+  padding-top: 8rem;
+}
+
+.about-section .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 6.4rem;
+  gap: 1rem;
+}
+
+.about-section .container h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.about-section .container p {
+  font-size: 1.8rem;
+  color: var(--secondary-dark);
+  font-weight: 200;
+  line-height: 1.8;
+}

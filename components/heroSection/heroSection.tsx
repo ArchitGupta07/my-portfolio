@@ -24,11 +24,7 @@ const HeroSection = () => {
               pauseTime={2000} // Pause between texts
             />
           </div>
-          {/* <p>
-            I am a passionate full stack developer skilled in JavaScript, React,
-            Node.js, and Python. I love building web applications that make a
-            real impact.
-          </p> */}
+
           <p>
             I am exploring new technologies and looking for opportunities to
             grow and learn in the software development field.
@@ -37,7 +33,7 @@ const HeroSection = () => {
           <SocialBtns />
 
           <div className="hero-buttons">
-            <button>Resume</button>
+            <button onClick={toggleTheme}>Resume</button>
             <button>Contact</button>
           </div>
         </div>

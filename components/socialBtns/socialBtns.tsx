@@ -1,13 +1,10 @@
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import {
   GithubIcon,
   LeetCodeDark,
-  LeetCodeLight,
-  LinkedInIcon,
   LinkedInLight,
-} from "../icons/socialIcons";
+} from "@/components/icons/socialIcons";
 
 const SocialBtns = () => {
   return (
