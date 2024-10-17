@@ -1,0 +1,79 @@
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid pink; */
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: var(--bgLightBlack);
+}
+
+.project-card .proj-img-wrapper {
+  flex: 1;
+  width: 100;
+  height: 100;
+}
+
+.project-card .proj-image {
+  border-radius: 0.8rem;
+  width: 100;
+  height: 100;
+}
+
+.project-card .project-info {
+  flex: 1;
+  display: flex;
+  /* border: 1px solid green; */
+  width: 82%;
+}
+.project-card .project-info .info-side {
+  flex: 2;
+  /* border: 1px solid gray; */
+}
+.project-card .proj-name {
+  font-size: 3.6rem;
+  font-weight: 500;
+  color: var(--secondary-dark);
+  text-align: left;
+  /* border: 1px solid red; */
+  width: 82%;
+}
+.project-card .project-info .info-side span {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.project-card .project-info .info-side span p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--secondary-dark);
+  padding: 1rem;
+
+  border-radius: 2rem;
+
+  box-shadow: 0 0 4px var(--secondary-dark);
+}
+
+.project-card .project-info .btn-side {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  gap: 0.6rem;
+}
+
+.project-card .project-info .btn-side button {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  /* border: 1px solid green; */
+  padding: 0.6rem 0.8rem;
+  color: var(--secondary-dark);
+  border-radius: 2rem;
+  box-shadow: 0 0 4px #111528;
+  background-color: var(--secondary-color);
+}

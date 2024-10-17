@@ -1,0 +1,14 @@
+.project-section {
+  padding: 8rem 0 4rem 0;
+}
+
+.project-section .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 4rem 10rem;
+  justify-content: center;
+  /* flex-wrap: wrap; */
+  gap: 4rem;
+  /* border: 1px solid pink; */
+}

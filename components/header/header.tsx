@@ -13,6 +13,7 @@ interface HeaderProps {
   heroRef: React.RefObject<HTMLElement>;
   contactRef: React.RefObject<HTMLElement>;
   aboutRef: React.RefObject<HTMLElement>;
+  projectRef: React.RefObject<HTMLElement>;
 }
 
 const Header: React.FC<HeaderProps> = ({
@@ -20,6 +21,7 @@ const Header: React.FC<HeaderProps> = ({
   heroRef,
   contactRef,
   aboutRef,
+  projectRef,
 }) => {
   const path = usePathname();
   // console.log(path);
@@ -78,7 +80,9 @@ const Header: React.FC<HeaderProps> = ({
                 : "main-header-list"
             }
           >
-            <button>Projects</button>
+            <button onClick={() => scrollToSection(projectRef)}>
+              Projects
+            </button>
           </li>
           <li
             className={
