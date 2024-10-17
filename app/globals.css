@@ -12,6 +12,8 @@
   --text-soft: #777575;
   --bgSoft: #f0f0f0;
   --bgDark: #111528;
+  --bgLightBlack: #1e1f1e;
+  --bgLightBlack2: #323232;
 }
 
 @media (prefers-color-scheme: dark) {

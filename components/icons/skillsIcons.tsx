@@ -3,8 +3,8 @@ import { IconProps } from "./socialIcons";
 export const LinkedInIconTwo: React.FC<IconProps> = ({ width, height }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={width}
-    height={height}
+    width="100%"
+    height="100%"
     viewBox="0 0 24 24"
   >
     <circle cx="4.983" cy="5.009" r="2.188"></circle>
@@ -16,8 +16,8 @@ export const SwiftUiIcon: React.FC<IconProps> = ({ width, height }) => (
     xmlns="http://www.w3.org/2000/svg"
     x="0px"
     y="0px"
-    width={width}
-    height={height}
+    width="100%"
+    height="100%"
     viewBox="0 0 48 48"
   >
     <path
@@ -74,14 +74,14 @@ export const ScssIcon: React.FC<IconProps> = ({ width, height }) => (
     xmlnsXlink="http://www.w3.org/1999/xlink"
     preserveAspectRatio="xMidYMid"
     fill="#000000"
-    width={width}
-    height={height}
+    width="100%"
+    height="100%"
   >
-    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g
       id="SVGRepo_tracerCarrier"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></g>
     <g id="SVGRepo_iconCarrier">
       {" "}
@@ -98,8 +98,8 @@ export const TailwindCSSIcon: React.FC<IconProps> = ({ width, height }) => (
   <svg
     viewBox="0 0 32 32"
     xmlns="http://www.w3.org/2000/svg"
-    width={width}
-    height={height}
+    width="100%"
+    height="100%"
     fill="#000000"
   >
     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
@@ -121,15 +121,15 @@ export const DockerIcon: React.FC<IconProps> = ({ width, height }) => (
   <svg
     viewBox="0 0 16 16"
     xmlns="http://www.w3.org/2000/svg"
-    width={width}
-    height={height}
+    width="100%"
+    height="100%"
     fill="none"
   >
-    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g
       id="SVGRepo_tracerCarrier"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></g>
     <g id="SVGRepo_iconCarrier">
       <path
@@ -143,17 +143,17 @@ export const DjangoIcon: React.FC<IconProps> = ({ width, height }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     aria-label="Django Project"
-    width={width}
-    height={height}
+    width="100%"
+    height="100%"
     role="img"
     viewBox="0 0 512 512"
     fill="#000000"
   >
-    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g
       id="SVGRepo_tracerCarrier"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></g>
     <g id="SVGRepo_iconCarrier">
       <rect width="512" height="512" rx="15%" fill="#113228"></rect>
@@ -170,14 +170,16 @@ export const SwiftIcon: React.FC<IconProps> = ({ width, height }) => (
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
+    width="100%"
+    height="100%"
     preserveAspectRatio="xMidYMid"
     fill="#000000"
   >
-    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g
       id="SVGRepo_tracerCarrier"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></g>
     <g id="SVGRepo_iconCarrier">
       {" "}
@@ -229,11 +231,11 @@ export const SqlIcon: React.FC<IconProps> = ({ width, height }) => (
     xmlns="http://www.w3.org/2000/svg"
     fill="#000000"
   >
-    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g
       id="SVGRepo_tracerCarrier"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></g>
     <g id="SVGRepo_iconCarrier">
       <path d="M-18.458 6.58h191.151v132.49H-18.458V6.58z" fill="none"></path>
@@ -259,18 +261,18 @@ export const SqlIcon: React.FC<IconProps> = ({ width, height }) => (
 
 export const CsharpIcon: React.FC<IconProps> = ({ width, height }) => (
   <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g
       id="SVGRepo_tracerCarrier"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></g>
     <g id="SVGRepo_iconCarrier">
       {" "}
       <path d="M10 8V7H11V8H10Z" fill="#6d2ecc"></path>{" "}
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M7.5 0.421143L14 4.21281V10.7872L7.5 14.5788L1 10.7872V4.21281L7.5 0.421143ZM6.33156 4C4.49159 4 3 5.49159 3 7.33156V7.66844C3 9.50841 4.49159 11 6.33156 11C6.84877 11 7.35887 10.8796 7.82148 10.6483L8.22361 10.4472L7.77639 9.55279L7.37426 9.75385C7.05052 9.91573 6.69352 10 6.33156 10C5.04387 10 4 8.95613 4 7.66844V7.33156C4 6.04387 5.04387 5 6.33156 5C6.69352 5 7.05052 5.08427 7.37426 5.24615L7.77639 5.44721L8.22361 4.55279L7.82148 4.35172C7.35887 4.12042 6.84877 4 6.33156 4ZM9 5V6H8V7H9V8H8V9H9V10H10V9H11V10H12V9H13V8H12V7H13V6H12V5H11V6H10V5H9Z"
         fill="#6d2ecc"
       ></path>{" "}
@@ -281,8 +283,8 @@ export const CsharpIcon: React.FC<IconProps> = ({ width, height }) => (
 export const ReactIcon: React.FC<IconProps> = ({ width, height }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={width}
-    height={height}
+    width="100%"
+    height="100%"
     viewBox="0 0 24 24"
   >
     <circle cx="4.983" cy="5.009" r="2.188"></circle>
@@ -291,11 +293,11 @@ export const ReactIcon: React.FC<IconProps> = ({ width, height }) => (
 );
 export const CssIcon: React.FC<IconProps> = ({ width, height }) => (
   <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g
       id="SVGRepo_tracerCarrier"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></g>
     <g id="SVGRepo_iconCarrier">
       {" "}
@@ -311,11 +313,11 @@ export const CssIcon: React.FC<IconProps> = ({ width, height }) => (
 
 export const HtmlIcon: React.FC<IconProps> = ({ width, height }) => (
   <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g
       id="SVGRepo_tracerCarrier"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></g>
     <g id="SVGRepo_iconCarrier">
       {" "}
@@ -335,11 +337,11 @@ export const NodeIcon: React.FC<IconProps> = ({ width, height }) => (
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
   >
-    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g
       id="SVGRepo_tracerCarrier"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></g>
     <g id="SVGRepo_iconCarrier">
       <path fill="url(#a)" d="M0 0h64v64H0z"></path>
@@ -365,11 +367,11 @@ export const NodeIcon: React.FC<IconProps> = ({ width, height }) => (
 
 export const GitIcon: React.FC<IconProps> = ({ width, height }) => (
   <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g
       id="SVGRepo_tracerCarrier"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></g>
     <g id="SVGRepo_iconCarrier">
       {" "}
@@ -387,23 +389,23 @@ export const GitIcon: React.FC<IconProps> = ({ width, height }) => (
 
 export const PythonIcon: React.FC<IconProps> = ({ width, height }) => (
   <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g
       id="SVGRepo_tracerCarrier"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></g>
     <g id="SVGRepo_iconCarrier">
       {" "}
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M13.0164 2C10.8193 2 9.03825 3.72453 9.03825 5.85185V8.51852H15.9235V9.25926H5.97814C3.78107 9.25926 2 10.9838 2 13.1111L2 18.8889C2 21.0162 3.78107 22.7407 5.97814 22.7407H8.27322V19.4815C8.27322 17.3542 10.0543 15.6296 12.2514 15.6296H19.5956C21.4547 15.6296 22.9617 14.1704 22.9617 12.3704V5.85185C22.9617 3.72453 21.1807 2 18.9836 2H13.0164ZM12.0984 6.74074C12.8589 6.74074 13.4754 6.14378 13.4754 5.40741C13.4754 4.67103 12.8589 4.07407 12.0984 4.07407C11.3378 4.07407 10.7213 4.67103 10.7213 5.40741C10.7213 6.14378 11.3378 6.74074 12.0984 6.74074Z"
         fill="url(#paint0_linear_87_8204)"
       ></path>{" "}
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M18.9834 30C21.1805 30 22.9616 28.2755 22.9616 26.1482V23.4815L16.0763 23.4815L16.0763 22.7408L26.0217 22.7408C28.2188 22.7408 29.9998 21.0162 29.9998 18.8889V13.1111C29.9998 10.9838 28.2188 9.25928 26.0217 9.25928L23.7266 9.25928V12.5185C23.7266 14.6459 21.9455 16.3704 19.7485 16.3704L12.4042 16.3704C10.5451 16.3704 9.03809 17.8296 9.03809 19.6296L9.03809 26.1482C9.03809 28.2755 10.8192 30 13.0162 30H18.9834ZM19.9015 25.2593C19.1409 25.2593 18.5244 25.8562 18.5244 26.5926C18.5244 27.329 19.1409 27.9259 19.9015 27.9259C20.662 27.9259 21.2785 27.329 21.2785 26.5926C21.2785 25.8562 20.662 25.2593 19.9015 25.2593Z"
         fill="url(#paint1_linear_87_8204)"
       ></path>{" "}
@@ -418,8 +420,8 @@ export const PythonIcon: React.FC<IconProps> = ({ width, height }) => (
           gradientUnits="userSpaceOnUse"
         >
           {" "}
-          <stop stop-color="#327EBD"></stop>{" "}
-          <stop offset="1" stop-color="#1565A7"></stop>{" "}
+          <stop stopColor="#327EBD"></stop>{" "}
+          <stop offset="1" stopColor="#1565A7"></stop>{" "}
         </linearGradient>{" "}
         <linearGradient
           id="paint1_linear_87_8204"
@@ -430,8 +432,8 @@ export const PythonIcon: React.FC<IconProps> = ({ width, height }) => (
           gradientUnits="userSpaceOnUse"
         >
           {" "}
-          <stop stop-color="#FFDA4B"></stop>{" "}
-          <stop offset="1" stop-color="#F9C600"></stop>{" "}
+          <stop stopColor="#FFDA4B"></stop>{" "}
+          <stop offset="1" stopColor="#F9C600"></stop>{" "}
         </linearGradient>{" "}
       </defs>{" "}
     </g>
@@ -446,11 +448,11 @@ export const JavascriptIcon: React.FC<IconProps> = ({ width, height }) => (
     viewBox="0 0 512 512"
     fill="#000000"
   >
-    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g
       id="SVGRepo_tracerCarrier"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></g>
     <g id="SVGRepo_iconCarrier">
       <rect width="512" height="512" rx="15%" fill="#f7df1e"></rect>

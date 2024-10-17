@@ -1,6 +1,6 @@
 export interface IconProps {
-  width: number;
-  height: number;
+  width?: number;
+  height?: number;
 }
 
 export const LinkedInIcon: React.FC<IconProps> = ({ width, height }) => (

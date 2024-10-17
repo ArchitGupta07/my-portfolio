@@ -1,5 +1,6 @@
 import React from "react";
 import "@/components/about/about.css";
+import SkillsGrid from "./skillsGrid/skillsGrid";
 const About = () => {
   return (
     <section className="about-section">
@@ -17,6 +18,13 @@ const About = () => {
           always eager to learn and adapt to new technologies, constantly
           looking for opportunities to grow as a full-stack developer.
         </p>
+
+        <h1>Technologies and Tools</h1>
+        <p>
+          I develop user-centric, high-performance apps and websites using a
+          blend of innovative technologies and trusted open-source tools.
+        </p>
+        <SkillsGrid />
       </div>
     </section>
   );
