@@ -1,6 +1,6 @@
 import { IconProps } from "./socialIcons";
 
-export const LinkedInIconTwo: React.FC<IconProps> = ({ width, height }) => (
+export const LinkedInIconTwo: React.FC<IconProps> = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="100%"
@@ -11,7 +11,7 @@ export const LinkedInIconTwo: React.FC<IconProps> = ({ width, height }) => (
     <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
   </svg>
 );
-export const SwiftUiIcon: React.FC<IconProps> = ({ width, height }) => (
+export const SwiftUiIcon: React.FC<IconProps> = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     x="0px"
@@ -66,7 +66,7 @@ export const SwiftUiIcon: React.FC<IconProps> = ({ width, height }) => (
     ></path>
   </svg>
 );
-export const ScssIcon: React.FC<IconProps> = ({ width, height }) => (
+export const ScssIcon: React.FC<IconProps> = () => (
   <svg
     viewBox="0 -32 256 256"
     version="1.1"
@@ -94,7 +94,7 @@ export const ScssIcon: React.FC<IconProps> = ({ width, height }) => (
     </g>
   </svg>
 );
-export const TailwindCSSIcon: React.FC<IconProps> = ({ width, height }) => (
+export const TailwindCSSIcon: React.FC<IconProps> = () => (
   <svg
     viewBox="0 0 32 32"
     xmlns="http://www.w3.org/2000/svg"
@@ -117,7 +117,7 @@ export const TailwindCSSIcon: React.FC<IconProps> = ({ width, height }) => (
     </g>
   </svg>
 );
-export const DockerIcon: React.FC<IconProps> = ({ width, height }) => (
+export const DockerIcon: React.FC<IconProps> = () => (
   <svg
     viewBox="0 0 16 16"
     xmlns="http://www.w3.org/2000/svg"
@@ -139,7 +139,7 @@ export const DockerIcon: React.FC<IconProps> = ({ width, height }) => (
     </g>
   </svg>
 );
-export const DjangoIcon: React.FC<IconProps> = ({ width, height }) => (
+export const DjangoIcon: React.FC<IconProps> = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     aria-label="Django Project"
@@ -164,7 +164,7 @@ export const DjangoIcon: React.FC<IconProps> = ({ width, height }) => (
     </g>
   </svg>
 );
-export const SwiftIcon: React.FC<IconProps> = ({ width, height }) => (
+export const SwiftIcon: React.FC<IconProps> = () => (
   <svg
     viewBox="0 0 256 256"
     version="1.1"
@@ -223,7 +223,7 @@ export const SwiftIcon: React.FC<IconProps> = ({ width, height }) => (
     </g>
   </svg>
 );
-export const SqlIcon: React.FC<IconProps> = ({ width, height }) => (
+export const SqlIcon: React.FC<IconProps> = () => (
   <svg
     width="256px"
     height="256px"
@@ -259,7 +259,7 @@ export const SqlIcon: React.FC<IconProps> = ({ width, height }) => (
   </svg>
 );
 
-export const CsharpIcon: React.FC<IconProps> = ({ width, height }) => (
+export const CsharpIcon: React.FC<IconProps> = () => (
   <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g
@@ -280,7 +280,7 @@ export const CsharpIcon: React.FC<IconProps> = ({ width, height }) => (
   </svg>
 );
 
-export const ReactIcon: React.FC<IconProps> = ({ width, height }) => (
+export const ReactIcon: React.FC<IconProps> = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="100%"
@@ -291,7 +291,7 @@ export const ReactIcon: React.FC<IconProps> = ({ width, height }) => (
     <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
   </svg>
 );
-export const CssIcon: React.FC<IconProps> = ({ width, height }) => (
+export const CssIcon: React.FC<IconProps> = () => (
   <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g
@@ -311,7 +311,7 @@ export const CssIcon: React.FC<IconProps> = ({ width, height }) => (
   </svg>
 );
 
-export const HtmlIcon: React.FC<IconProps> = ({ width, height }) => (
+export const HtmlIcon: React.FC<IconProps> = () => (
   <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g
@@ -330,7 +330,7 @@ export const HtmlIcon: React.FC<IconProps> = ({ width, height }) => (
     </g>
   </svg>
 );
-export const NodeIcon: React.FC<IconProps> = ({ width, height }) => (
+export const NodeIcon: React.FC<IconProps> = () => (
   <svg
     viewBox="0 0 64 64"
     fill="none"
@@ -365,7 +365,7 @@ export const NodeIcon: React.FC<IconProps> = ({ width, height }) => (
   </svg>
 );
 
-export const GitIcon: React.FC<IconProps> = ({ width, height }) => (
+export const GitIcon: React.FC<IconProps> = () => (
   <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g
@@ -387,7 +387,7 @@ export const GitIcon: React.FC<IconProps> = ({ width, height }) => (
   </svg>
 );
 
-export const PythonIcon: React.FC<IconProps> = ({ width, height }) => (
+export const PythonIcon: React.FC<IconProps> = () => (
   <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
     <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g
@@ -440,7 +440,7 @@ export const PythonIcon: React.FC<IconProps> = ({ width, height }) => (
   </svg>
 );
 
-export const JavascriptIcon: React.FC<IconProps> = ({ width, height }) => (
+export const JavascriptIcon: React.FC<IconProps> = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     aria-label="JavaScript"
