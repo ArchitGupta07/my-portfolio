@@ -32,7 +32,8 @@
   /* border: 1px solid gray; */
 }
 .project-card .proj-name {
-  font-size: 3.6rem;
+  font-size: 3rem;
+  padding: 1rem 0;
   font-weight: 500;
   color: var(--secondary-dark);
   text-align: left;
@@ -65,7 +66,7 @@
   gap: 0.6rem;
 }
 
-.project-card .project-info .btn-side button {
+.project-card .project-info .btn-side .button {
   font-size: 1.8rem;
   display: flex;
   align-items: center;

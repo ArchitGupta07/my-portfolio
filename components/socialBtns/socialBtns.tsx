@@ -10,7 +10,7 @@ const SocialBtns = () => {
   return (
     <div className="social-btns">
       <Link
-        href="https://github.com/ArchitGupta07" // Replace with your GitHub profile link
+        href="https://github.com/ArchitGupta07"
         target="_blank"
         rel="noopener noreferrer"
         className="social-btn"
@@ -19,20 +19,20 @@ const SocialBtns = () => {
         <GithubIcon width={45} height={45} />
       </Link>
       <Link
-        href="https://github.com/ArchitGupta07" // Replace with your GitHub profile link
+        href="https://leetcode.com/u/Archit_Gupta01/"
         target="_blank"
         rel="noopener noreferrer"
         className="social-btn"
-        aria-label="GitHub"
+        aria-label="Leetcode"
       >
         <LeetCodeDark width={45} height={45} />
       </Link>
       <Link
-        href="https://github.com/ArchitGupta07" // Replace with your GitHub profile link
+        href="https://www.linkedin.com/in/architgupta07/"
         target="_blank"
         rel="noopener noreferrer"
         className="social-btn"
-        aria-label="GitHub"
+        aria-label="LinkedIn"
       >
         <LinkedInLight width={50} height={50} />
       </Link>

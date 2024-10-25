@@ -10,5 +10,6 @@
   justify-content: center;
   /* flex-wrap: wrap; */
   gap: 4rem;
-  /* border: 1px solid pink; */
+
+  /* border-bottom: 2px solid rgb(255, 255, 255); */
 }

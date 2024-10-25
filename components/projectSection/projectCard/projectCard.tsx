@@ -4,6 +4,7 @@ import "@/components/projectSection/projectCard/projectCard.css";
 import { Project } from "@/data/projectsData";
 import { GithubIcon } from "@/components/icons/socialIcons";
 import AosWrapper from "@/components/aosWrapper";
+import Link from "next/link";
 
 const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
   return (
@@ -26,10 +27,10 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
             </span>
           </div>
           <div className="btn-side">
-            <button>View Website</button>
-            <button>
+            <Link href={project.deployedLink}>View Website</Link>
+            <Link href={project.githubLink}>
               <GithubIcon width={25} height={25} /> Gihtub Link
-            </button>
+            </Link>
           </div>
         </div>
       </div>
