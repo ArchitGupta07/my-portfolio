@@ -108,7 +108,7 @@ const ContactForm: React.FC = () => {
               onChange={handleChange}
               className={formErrors.message ? "error" : ""}
               placeholder="Enter Your Message"
-              rows={5}
+              rows={3}
             />
             {formErrors.message && (
               <span className="error-text">{formErrors.message}</span>

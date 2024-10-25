@@ -3,15 +3,19 @@
 .header {
   display: block;
   position: fixed;
+  z-index: 1000;
+  margin: auto;
+  /* border: 1px solid pink; */
+  width: 100%;
 }
 
-.header.container.scrolled {
+.header.scrolled {
   /* background: #1d2251; */
   background: #111528;
   /* background-color: var(--secondary-color); */
   box-shadow: 0px 4px 10px rgba(177, 173, 173, 0.2);
 }
-.header.container {
+.header .container {
   margin: auto;
   display: flex;
   /* border: 1px solid black; */
@@ -63,19 +67,21 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 0 2rem;
+  padding: 0.6rem 2rem;
   transition: all 0.1s;
   color: var(--secondary-dark);
+  border-radius: 1rem;
 
   /* border: 1px solid #000; */
 }
 
 .header nav ul li:hover,
 .header nav ul .active {
-  color: rgb(0, 0, 0);
+  color: #fff;
   /* font-weight: 500; */
+
   border-bottom: 2px solid var(--primary-color);
-  /* background: var(--primary-color); */
+  background: var(--secondary-color);
   /* border-radius: 5px; */
 }
 

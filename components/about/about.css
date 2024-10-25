@@ -1,6 +1,6 @@
 .about-section {
   background: var(--bgDark);
-  padding-top: 8rem;
+  padding: 8rem 0 4rem 0;
 }
 
 .about-section .container {

@@ -26,15 +26,31 @@ const Header: React.FC<HeaderProps> = ({
   const path = usePathname();
   // console.log(path);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [currSection, setCurrSection] = useState("home");
 
-  // Add scroll event listener to change the background
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
-        // Change 50 to your desired scroll value
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
+      }
+
+      // Track current section in view
+      const heroOffset = heroRef.current?.offsetTop ?? 0;
+      const aboutOffset = aboutRef.current?.offsetTop ?? 0;
+      const projectOffset = projectRef.current?.offsetTop ?? 0;
+      const contactOffset = contactRef.current?.offsetTop ?? 0;
+      const scrollPos = window.scrollY + window.innerHeight / 2;
+
+      if (scrollPos >= contactOffset) {
+        setCurrSection("contact");
+      } else if (scrollPos >= projectOffset) {
+        setCurrSection("projects");
+      } else if (scrollPos >= aboutOffset) {
+        setCurrSection("about");
+      } else {
+        setCurrSection("home");
       }
     };
 
@@ -44,66 +60,82 @@ const Header: React.FC<HeaderProps> = ({
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [heroRef, aboutRef, projectRef, contactRef]);
+
+  const handleNavigation = (
+    section: string,
+    ref: React.RefObject<HTMLElement>
+  ) => {
+    setCurrSection(section);
+    scrollToSection(ref);
+  };
 
   return (
-    <header className={`container header ${isScrolled ? "scrolled" : ""}`}>
-      <div className="logo-part">
-        {/* <Image src="/logo.png" width={40} height={40} alt="logo" /> */}
-        <h2>&lt; Archit Gupta /&gt;</h2>
-      </div>
-      <nav>
-        <ul>
-          <li
-            className={
-              path === "/dashboard"
-                ? "active main-header-list"
-                : "main-header-list"
-            }
-          >
-            <button onClick={() => scrollToSection(heroRef)}>Home</button>
-          </li>
+    <header className={` header ${isScrolled ? "scrolled" : ""}`}>
+      <div className="container">
+        <div className="logo-part">
+          {/* <Image src="/logo.png" width={40} height={40} alt="logo" /> */}
+          <h2>&lt; Archit Gupta /&gt;</h2>
+        </div>
+        <nav>
+          <ul>
+            <li
+              className={
+                currSection === "home"
+                  ? "active main-header-list"
+                  : "main-header-list"
+              }
+            >
+              <button onClick={() => handleNavigation("home", heroRef)}>
+                Home
+              </button>
+            </li>
 
-          <li
-            className={
-              path === "/dashboard/exams"
-                ? "active main-header-list"
-                : "main-header-list"
-            }
-          >
-            <button onClick={() => scrollToSection(aboutRef)}>About</button>
-          </li>
-          <li
-            className={
-              path === "/dashboard/blog"
-                ? "active main-header-list"
-                : "main-header-list"
-            }
-          >
-            <button onClick={() => scrollToSection(projectRef)}>
-              Projects
-            </button>
-          </li>
-          <li
-            className={
-              path === "/dashboard/code"
-                ? "active main-header-list"
-                : "main-header-list"
-            }
-          >
-            <button onClick={() => scrollToSection(contactRef)}>Contact</button>
-          </li>
-          {/* <li
+            <li
+              className={
+                currSection === "about"
+                  ? "active main-header-list"
+                  : "main-header-list"
+              }
+            >
+              <button onClick={() => handleNavigation("about", aboutRef)}>
+                About
+              </button>
+            </li>
+            <li
+              className={
+                currSection === "projects"
+                  ? "active main-header-list"
+                  : "main-header-list"
+              }
+            >
+              <button onClick={() => handleNavigation("projects", projectRef)}>
+                Projects
+              </button>
+            </li>
+            <li
+              className={
+                currSection === "contact"
+                  ? "active main-header-list"
+                  : "main-header-list"
+              }
+            >
+              <button onClick={() => handleNavigation("contact", contactRef)}>
+                Contact
+              </button>
+            </li>
+            {/* <li
             className={
               path === "/dashboard/about"
                 ? "active main-header-list"
                 : "main-header-list"
             }
           > */}
-          {/* <Link href="/dashboard/about"></Link> */}
-          {/* </li> */}
-        </ul>
-      </nav>
+            {/* <Link href="/dashboard/about"></Link> */}
+            {/* </li> */}
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 };

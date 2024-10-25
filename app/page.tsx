@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import ContactSection from "@/components/contactSection/contactSection";
 import Header from "@/components/header/header";
 import HeroSection from "@/components/heroSection/heroSection";
@@ -22,6 +22,9 @@ export default function Home() {
       });
     }
   };
+  useEffect(() => {
+    scrollToSection(heroRef);
+  }, []);
 
   return (
     <main>

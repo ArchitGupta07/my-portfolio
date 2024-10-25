@@ -13,6 +13,8 @@
   height: 4rem;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
+  /* border: 1px solid red; */
 }
 
 .skill-item h3 {
