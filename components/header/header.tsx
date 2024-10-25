@@ -3,8 +3,6 @@
 import React, { useEffect, useState } from "react";
 import "@/components/header/header.css";
 
-import { usePathname } from "next/navigation";
-
 // import { getSession, logout } from "@/utils/actions";
 // import { SessionData } from "@/utils/lib";
 
@@ -23,7 +21,7 @@ const Header: React.FC<HeaderProps> = ({
   aboutRef,
   projectRef,
 }) => {
-  const path = usePathname();
+  // const path = usePathname();
   // console.log(path);
   const [isScrolled, setIsScrolled] = useState(false);
   const [currSection, setCurrSection] = useState("home");
@@ -37,7 +35,7 @@ const Header: React.FC<HeaderProps> = ({
       }
 
       // Track current section in view
-      const heroOffset = heroRef.current?.offsetTop ?? 0;
+      // const heroOffset = heroRef.current?.offsetTop ?? 0;
       const aboutOffset = aboutRef.current?.offsetTop ?? 0;
       const projectOffset = projectRef.current?.offsetTop ?? 0;
       const contactOffset = contactRef.current?.offsetTop ?? 0;
