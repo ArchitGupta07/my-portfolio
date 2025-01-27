@@ -60,11 +60,11 @@ export const DotnetIcon: React.FC<IconProps> = () => (
 );
 export const TypescriptIcon: React.FC<IconProps> = () => (
   <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000">
-    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g
       id="SVGRepo_tracerCarrier"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></g>
     <g id="SVGRepo_iconCarrier">
       <title>file_type_typescript_official</title>
@@ -90,11 +90,11 @@ export const TypescriptIcon: React.FC<IconProps> = () => (
 );
 export const ReduxIcon: React.FC<IconProps> = () => (
   <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g
       id="SVGRepo_tracerCarrier"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></g>
     <g id="SVGRepo_iconCarrier">
       {" "}
@@ -114,11 +114,11 @@ export const ExpressIcon: React.FC<IconProps> = () => (
     preserveAspectRatio="xMidYMid"
     fill="#000000"
   >
-    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g
       id="SVGRepo_tracerCarrier"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></g>
     <g id="SVGRepo_iconCarrier">
       {" "}
@@ -191,11 +191,11 @@ export const SwiftUiIcon: React.FC<IconProps> = () => (
 );
 export const ScssIcon: React.FC<IconProps> = () => (
   <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000">
-    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g
       id="SVGRepo_tracerCarrier"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></g>
     <g id="SVGRepo_iconCarrier">
       <title>file_type_scss2</title>
@@ -597,11 +597,11 @@ export const PostmanIcon: React.FC<IconProps> = () => (
     preserveAspectRatio="xMidYMid"
     fill="#000000"
   >
-    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
     <g
       id="SVGRepo_tracerCarrier"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     ></g>
     <g id="SVGRepo_iconCarrier">
       {" "}

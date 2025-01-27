@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import "@/components/heroSection/heroSection.css";
 import TypingEffect from "../typingEffect";
 import SocialBtns from "../socialBtns/socialBtns";
+import ResumeModal from "../resume/resume";
 
 const HeroSection = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -33,8 +34,9 @@ const HeroSection = () => {
           <SocialBtns />
 
           <div className="hero-buttons">
-            <button onClick={toggleTheme}>Resume</button>
-            <button>Contact</button>
+            {/* <button onClick={toggleTheme}>Resume</button> */}
+            {/* <button>Contact</button> */}
+            <ResumeModal pdfUrl="/resume.pdf" />
           </div>
         </div>
       </div>

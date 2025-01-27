@@ -11,7 +11,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
     <AosWrapper>
       <div data-aos="zoom-in-up" className="project-card">
         <Image
-          src="/sampleProj.jpg"
+          src={project.imageSrc || "/sampleProj.jpg"}
           alt="sample Project Image"
           width={400}
           height={200}

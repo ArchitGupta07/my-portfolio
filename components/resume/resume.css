@@ -1,0 +1,66 @@
+/* Button to open the modal */
+.open-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.open-button:hover {
+  background-color: #0056b3;
+}
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal content */
+.modal-content {
+  position: relative;
+  background: white;
+  width: 80%;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Close button */
+.close-button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0.5rem;
+  top: 10px;
+  right: 2px;
+  font-size: 14px;
+  background: white;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.close-button:hover {
+  color: black;
+}
+
+/* iFrame */
+.modal-iframe {
+  width: 100%;
+  height: 500px;
+  border: none;
+}
